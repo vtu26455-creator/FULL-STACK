@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<h2>Admin Dashboard</h2>
+
+<div class="dashboard">
+    <div class="card">
+        <h3>Total Events</h3>
+        <p id="totalEvents">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Bookings</h3>
+        <p id="totalBookings">0</p>
+    </div>
+</div>
+
+<h3>Create New Event</h3>
+<form id="eventForm">
+    <input type="text" id="eventName" placeholder="Event Name" required>
+    <input type="date" id="eventDate" required>
+    <input type="number" id="ticketPrice" placeholder="Ticket Price" required>
+    <input type="number" id="ticketQty" placeholder="Ticket Quantity" required>
+    <button type="submit">Add Event</button>
+</form>
+
+<h3>Event List</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Price</th>
+            <th>Tickets</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="eventTable"></tbody>
+</table>
+<h3>Booking Details</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Event</th>
+            <th>Tickets</th>
+            <th>Amount (₹)</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Day</th>
+        </tr>
+    </thead>
+    <tbody id="bookingTable"></tbody>  <!-- THIS IS IMPORTANT -->
+</table>
+
+<script src="admin.js"></script>
+</body>
+</html>

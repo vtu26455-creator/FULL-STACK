@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Lifecycle & Ticketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">End-to-End Event Lifecycle & Ticketing Platform</h1>
+
+    <h2>Create Event</h2>
+
+    <form id="eventForm">
+        <input type="text" id="eventName" placeholder="Event Name" required>
+        <input type="date" id="eventDate" required>
+        <input type="time" id="eventTime" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="number" id="price" placeholder="Ticket Price (₹)" required>
+        <input type="number" id="quantity" placeholder="Ticket Quantity" required>
+        <button type="submit">Create Event</button>
+    </form>
+
+    <h2>Available Events</h2>
+    <div id="eventList"></div>
+
+    <h2>Booking Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Event</th>
+                <th>Tickets</th>
+                <th>Amount (₹)</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Day</th>
+            </tr>
+        </thead>
+        <tbody id="bookingTable"></tbody>
+    </table>
+
+<script src="app.js"></script>
+</body>
+</html>

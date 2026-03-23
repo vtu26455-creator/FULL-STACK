@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #00bcd4;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+form input {
+    margin: 5px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
